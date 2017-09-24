@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class FechaActualComponent implements OnInit {
 
   hoy: any = new Date();
+  ciudad: string = "Xalapa";
+  resultado: number = 1.123;
+  dolareuro: number = 0.94;
+  nombre: string = "Laura";
+  sexo: string = 'mujer';
+  encabezamiento: any = { 'hombre':'Estimado', 'mujer':'Estimada' }
   constructor() { }
 
   ngOnInit() {

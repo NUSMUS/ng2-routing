@@ -1,2 +1,6 @@
-<p>Xalapa, {{ hoy | date: 'd/M/y H:mm'}}</p>
+<p>Xalapa, {{ hoy | date: 'd/M/y'}} a las {{ hoy | date: 'H:m Z'}}</p>
+<p>{{ ciudad | lowercase }}, {{ hoy | date: 'd-M-y' | uppercase }} a las {{ hoy | date: 'H:m Z' }}</p>
+<p>El resultado es {{ resultado | number:'2.2-2' }}</p>
+<p>La cotizacion del dolar actual es {{ dolareuro | euro }}</p>
+<p>{{ sexo | i18nSelect: encabezamiento }} {{ nombre }}</p>
 <app-copyright></app-copyright>
